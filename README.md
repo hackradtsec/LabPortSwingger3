@@ -8,6 +8,7 @@ Severidade: Alta
 
 Lab: https://portswigger.net/web-security/sql-injection/lab-login-bypass
 
+
 **1. Diagnóstico da Vulnerabilidade**
 A funcionalidade de login da aplicação possui uma vulnerabilidade de Injeção de SQL (SQLi) no campo de nome de usuário (username). Como a consulta realizada no banco de dados não utiliza declarações preparadas (Prepared Statements ou Parameterized Queries), as entradas do usuário são concatenadas diretamente na instrução SQL. Isso permite que um atacante manipule a lógica da consulta para autenticar-se sem fornecer uma senha válida.
 
